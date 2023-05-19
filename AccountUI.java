@@ -38,17 +38,7 @@ public class AccountUI {
     JFrame Frame2 = new JFrame("window");
 
 
-    JButton savingType = new JButton("savings ");
-    JButton currentType = new JButton("current  ");
-
-    public void AccountTypeUI() {
-        Frame2.setSize(300, 300);
-        Frame2.setLayout(new GridLayout(2, 1));
-        Frame2.setVisible(true);
-
-
-        Frame2.add(currentType);
-        Frame2.add(savingType);
+  
 
 
         currentType.addActionListener(new ActionListener() {
