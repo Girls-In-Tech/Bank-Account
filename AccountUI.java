@@ -96,7 +96,27 @@ CurrentUI();       }
         });
     }
 
-  
+    JFrame Frame4= new JFrame("window");
+
+    JLabel BalanceC = new JLabel("Balance: 100000");
+    JTextField depCurrent = new JTextField();
+    JButton depositButton = new JButton("Deposit");
+
+    public void depositCUI() {
+        Frame4.setSize(300, 300);
+        Frame4.setLayout(new GridLayout(3, 1));
+        Frame4.setVisible(true);
+
+        Frame4.add(BalanceC);
+        Frame4.add(depCurrent);
+        Frame4.add(depositButton);
+        depositButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+           JOptionPane.showMessageDialog(null,"you deposited " +  depCurrent.getText());
+            }
+        });
+    }
 
     JFrame Frame5= new JFrame("window");
 
