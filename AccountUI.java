@@ -65,37 +65,7 @@ CurrentUI();       }
         });
     }
 
-    JFrame Frame3 = new JFrame("window");
-
-    JLabel Balance = new JLabel("Balance: 100000");
-    JButton depositCurrent =new JButton("Deposit");
-    JButton withdrawalCurrent = new JButton("withdraw");
-
-    public void CurrentUI(){
-        Frame3.setSize(300, 300);
-        Frame3.setLayout(new GridLayout(3, 1));
-        Frame3.setVisible(true);
-
-        Frame3.add(Balance);
-        Frame3.add(depositCurrent);
-        Frame3.add(withdrawalCurrent);
-
-
-        depositCurrent.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                depositCUI();
-            }
-        });
-
-        withdrawalCurrent.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                withdrawalCUI();
-            }
-        });
-    }
-
+  
     JFrame Frame4= new JFrame("window");
 
     JLabel BalanceC = new JLabel("Balance: 100000");
